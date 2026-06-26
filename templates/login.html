@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Login</title>
+
+    <style>
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:'Segoe UI',sans-serif;
+    }
+
+    body{
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background:linear-gradient(135deg,#667eea,#764ba2);
+    }
+
+    .login-box{
+        width:420px;
+        padding:40px;
+        border-radius:25px;
+        background:rgba(255,255,255,0.15);
+        backdrop-filter:blur(15px);
+        box-shadow:0 8px 25px rgba(0,0,0,0.3);
+        text-align:center;
+        color:white;
+    }
+
+    .login-box h1{
+        margin-bottom:10px;
+        font-size:40px;
+    }
+
+    .login-box p{
+        margin-bottom:30px;
+        opacity:0.9;
+    }
+
+    input{
+        width:100%;
+        padding:15px;
+        margin:12px 0;
+        border:none;
+        border-radius:12px;
+        outline:none;
+        font-size:16px;
+    }
+
+    button{
+        width:100%;
+        padding:15px;
+        margin-top:15px;
+        border:none;
+        border-radius:12px;
+        background:white;
+        color:#667eea;
+        font-size:18px;
+        font-weight:bold;
+        cursor:pointer;
+        transition:0.3s;
+    }
+
+    button:hover{
+        transform:scale(1.05);
+    }
+
+    .icon{
+        font-size:60px;
+        margin-bottom:15px;
+    }
+
+    .error{
+        color:#ff8080;
+        margin-bottom:10px;
+        font-weight:bold;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+    <div class="icon">🎓</div>
+
+    <h1>Student Login</h1>
+
+    <p>Student Performance Prediction System</p>
+
+    {% if error %}
+        <div class="error">
+            {{ error }}
+        </div>
+    {% endif %}
+
+    <form method="POST">
+
+        <input
+            type="text"
+            name="username"
+            placeholder="👤 Username"
+            required
+        >
+
+        <input
+            type="password"
+            name="password"
+            placeholder="🔒 Password"
+            required
+        >
+
+        <button type="submit">
+            Login
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

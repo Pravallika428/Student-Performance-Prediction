@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Performance Prediction</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+}
+
+.container{
+    width:500px;
+    padding:40px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.3);
+    color:white;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    font-size:40px;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:8px;
+    font-size:18px;
+}
+
+input{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    outline:none;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    margin-top:25px;
+    border:none;
+    border-radius:12px;
+    background:white;
+    color:#667eea;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.back{
+    text-align:center;
+    margin-top:20px;
+}
+
+.back a{
+    color:white;
+    text-decoration:none;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📊 Prediction</h1>
+
+    <p class="subtitle">Enter Student Details</p>
+
+    <form action="/predict" method="POST">
+
+        <label>📚 Study Hours</label>
+        <input type="number" name="study_hours" required>
+
+        <label>📅 Attendance (%)</label>
+        <input type="number" name="attendance" required>
+
+        <label>📝 Previous Marks</label>
+        <input type="number" name="previous_marks" required>
+
+        <button type="submit">Predict Result</button>
+
+    </form>
+
+    <div class="back">
+        <a href="/dashboard">⬅ Back to Dashboard</a>
+    </div>
+
+</div>
+
+</body>
+</html>

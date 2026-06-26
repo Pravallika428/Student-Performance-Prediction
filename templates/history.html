@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prediction History</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:90%;
+    max-width:900px;
+    padding:40px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.3);
+    color:white;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:42px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:15px;
+}
+
+th{
+    background:white;
+    color:#667eea;
+    padding:15px;
+    font-size:18px;
+}
+
+td{
+    padding:15px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,0.2);
+}
+
+.pass{
+    color:#90EE90;
+    font-weight:bold;
+}
+
+.fail{
+    color:#FFB6C1;
+    font-weight:bold;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:white;
+    color:#667eea;
+    text-decoration:none;
+    border-radius:12px;
+    font-weight:bold;
+}
+
+.center{
+    text-align:center;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📋 Prediction History</h1>
+
+    <table>
+
+        <tr>
+            <th>ID</th>
+            <th>Study Hours</th>
+            <th>Attendance</th>
+            <th>Marks</th>
+            <th>Result</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>4</td>
+            <td>80</td>
+            <td>65</td>
+            <td class="pass">✅ PASS</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>60</td>
+            <td>40</td>
+            <td class="fail">❌ FAIL</td>
+        </tr>
+
+    </table>
+
+    <div class="center">
+        <a href="/dashboard" class="btn">⬅ Back to Dashboard</a>
+    </div>
+
+</div>
+
+</body>
+</html>

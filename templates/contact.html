@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:500px;
+    padding:40px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.3);
+    color:white;
+}
+
+h1{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:25px;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:25px;
+    opacity:0.9;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    outline:none;
+}
+
+textarea{
+    height:120px;
+    resize:none;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:white;
+    color:#667eea;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.back{
+    text-align:center;
+    margin-top:20px;
+}
+
+.back a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📞 Contact Us</h1>
+
+    <p class="subtitle">
+        Send your feedback or queries
+    </p>
+
+    <form>
+
+        <input type="text" placeholder="👤 Enter Your Name">
+
+        <input type="email" placeholder="📧 Enter Your Email">
+
+        <textarea placeholder="✍️ Enter Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+    <div class="back">
+        <a href="/dashboard">⬅ Back to Dashboard</a>
+    </div>
+
+</div>
+
+</body>
+</html>
